@@ -18,7 +18,7 @@ const Form = () => {
         setData({ ...data, [target.name]: target.value })
     }
     const submitHendler = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         if (!name || !message) {
             return
         }
