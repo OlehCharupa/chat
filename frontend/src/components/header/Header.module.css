@@ -1,0 +1,15 @@
+.header {
+  background-color: blue;
+  text-align: center;
+  padding: 20px 0;
+}
+.header_title {
+  font-size: 25px;
+  color: white;
+}
+.header_span {
+  background-color: #fff;
+  color: blue;
+  padding: 3px 6px;
+  border-radius: 50%;
+}

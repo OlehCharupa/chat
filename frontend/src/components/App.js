@@ -4,6 +4,7 @@ import MessageList from './messageList/MessageList';
 import React, { useEffect } from 'react';
 import { useDispatch } from "react-redux";
 import { getMessageOperations } from '../redux/operations/postMessage.js';
+import Header from './header/Header';
 
 
 
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Chat</h1>
+      <Header />
       <Form />
       <MessageList />
     </div>

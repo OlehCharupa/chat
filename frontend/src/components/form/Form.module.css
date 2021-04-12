@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.section {
+  padding: 15px 8px;
+}
+.input {
+  border: 2px solid black;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.textarea {
+  border: 2px solid black;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  height: 60px;
+  resize: none;
+}
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  width: max-content;
+  font-size: 18px;
+  color: white;
+  background-color: blue;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 0 auto;
+}
+.input:hover,
+.input:focus,
+.textarea:hover,
+.textarea:focus,
+.button:hover,
+.button:focus {
+  outline: none;
+  border: 2px solid blue;
+}

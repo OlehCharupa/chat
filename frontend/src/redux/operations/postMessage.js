@@ -1,5 +1,5 @@
 import axios from "axios";
-import { addArrayMsg, getAllMessage } from "../slice/messageSlice";
+import { getAllMessage } from "../slice/messageSlice";
 
 
 
@@ -16,7 +16,8 @@ export const getMessageOperations = () => async (dispatch) => {
 export const postMessageOperations = (obj) => async (dispatch) => {
     try {
         const result = await axios.post("/chat", obj)
-        dispatch(addArrayMsg(result.data))
+        console.log(result.data);
+        await dispatch(getMessageOperations())
     } catch (error) {
         console.log(error);
     }

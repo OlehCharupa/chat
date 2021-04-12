@@ -5,7 +5,7 @@ const messageSlice = createSlice({
     name: 'message',
     initialState,
     reducers: {
-        addArrayMsg(state, { payload }) {
+        addArrayMsg(state, payload) {
             return [...state, ...payload]
         },
         getAllMessage(state, { payload }) {

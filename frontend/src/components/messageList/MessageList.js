@@ -4,6 +4,8 @@ import './MessageList.css'
 
 const MessageList = () => {
     const message = useSelector(state => state.message)
+
+
     return (
         <div>
             <ul className="message_list">
